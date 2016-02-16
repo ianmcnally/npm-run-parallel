@@ -4,8 +4,9 @@
   "description": "Run npm tasks in parallel and exit when they are all done.",
   "main": "index.js",
   "scripts": {
-    "test:one": "node -e 'setTimeout(() => console.log(\"time1\"), 5000)'",
-    "test:two": "node -e 'setTimeout(() => console.log(\"time1\"), 1000)'"
+    "start": "node $npm_package_main",
+    "test:one": "node -e 'setTimeout(() => console.log(\"time1\"), 1000)'",
+    "test:two": "node -e 'setTimeout(() => console.log(\"time2\"), 500)'"
   },
   "author": "Ian McNally <ianmcnally@gmail.com>",
   "license": "ISC",
