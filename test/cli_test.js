@@ -8,7 +8,7 @@ describe('lib/cli', () => {
   let output
 
   before(() => {
-    output = shell(`node ${pkg.main} ${taskThatIsLonger} ${taskThatIsShorter}`)
+    output = shell(`node ${pkg.bin} ${taskThatIsLonger} ${taskThatIsShorter}`)
 
     return output
   })

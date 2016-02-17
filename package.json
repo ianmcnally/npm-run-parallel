@@ -2,7 +2,7 @@
   "name": "npm-run-parallel",
   "version": "0.2.3",
   "description": "Run npm tasks in parallel and exit when they are all done.",
-  "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "build": "babel $npm_package_config_source_dir -d $npm_package_config_output_dir",
     "lint": "npm run lint:eslint",
