@@ -1,5 +1,15 @@
 Run npm tasks in parallel and exit when they are all done.
 
+## Installation
+
+Locally (recommended, especially with npm scripts):
+
+`npm install npm-run-parallel`
+
+Globally, as a CLI:
+
+`npm install -g npm-run-parallel`
+
 ## Usage
 
 From the command line, or an npm script:
