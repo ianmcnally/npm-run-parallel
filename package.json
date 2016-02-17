@@ -4,12 +4,16 @@
   "description": "Run npm tasks in parallel and exit when they are all done.",
   "main": "index.js",
   "scripts": {
+    "build": "babel $npm_package_config_source_dir -d $npm_package_config_output_dir",
+    "lint": "npm run lint:eslint",
+    "lint:fix": "npm run lint:eslint:fix",
+    "lint:eslint": "eslint $npm_package_config_source_dir",
+    "lint:eslint:fix": "npm run lint:eslint -- --fix",
     "prepublish": "npm run build",
     "start": "node $npm_package_main",
-    "build": "babel $npm_package_config_source_dir -d $npm_package_config_output_dir",
-    "watch": "npm run build -- --watch",
     "test:one": "node -e 'setTimeout(() => console.log(\"time1\"), 1000)'",
-    "test:two": "node -e 'setTimeout(() => console.log(\"time2\"), 500)'"
+    "test:two": "node -e 'setTimeout(() => console.log(\"time2\"), 500)'",
+    "watch": "npm run build -- --watch"
   },
   "config": {
     "source_dir": "lib",
