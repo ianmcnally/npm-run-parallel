@@ -13,8 +13,8 @@
     "start": "node $npm_package_main",
     "test": "mocha --compilers js:babel-register $npm_package_config_tests --require $npm_package_config_test_helpers",
     "test:watch": "npm test -- --watch",
-    "test:one": "node -e 'setTimeout(() => console.log(\"time1\"), 1000)'",
-    "test:two": "node -e 'setTimeout(() => console.log(\"time2\"), 500)'",
+    "__test_fixture_longer__": "node -e 'setTimeout(() => console.log(\"time1\"), 10)'",
+    "__test_fixture_shorter__": "node -e 'setTimeout(() => console.log(\"time1\"), 1)'",
     "watch": "npm run build -- --watch"
   },
   "config": {
