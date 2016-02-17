@@ -1,6 +1,6 @@
 {
   "name": "npm-run-parallel",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Run npm tasks in parallel and exit when they are all done.",
   "main": "index.js",
   "scripts": {
