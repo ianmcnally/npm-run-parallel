@@ -11,12 +11,16 @@
     "lint:eslint:fix": "npm run lint:eslint -- --fix",
     "prepublish": "npm run build",
     "start": "node $npm_package_main",
+    "test": "mocha --compilers js:babel-register $npm_package_config_tests --require $npm_package_config_test_helpers",
+    "test:watch": "npm test -- --watch",
     "test:one": "node -e 'setTimeout(() => console.log(\"time1\"), 1000)'",
     "test:two": "node -e 'setTimeout(() => console.log(\"time2\"), 500)'",
     "watch": "npm run build -- --watch"
   },
   "config": {
     "source_dir": "lib",
+    "tests": "lib/**/*_test.js",
+    "test_helpers": "test-helpers/*.js",
     "output_dir": "dist"
   },
   "author": "Ian McNally <ianmcnally@gmail.com>",
@@ -24,5 +28,13 @@
   "dependencies": {
     "bluebird": "^3.3.1",
     "meow": "^3.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-register": "^6.5.2",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
   }
 }
