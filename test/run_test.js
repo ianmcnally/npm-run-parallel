@@ -1,5 +1,5 @@
-import { runTasks } from '../run'
-import * as execUtil from '../exec'
+import { runTasks } from '../lib/run'
+import * as execUtil from '../lib/exec'
 import Promise from 'bluebird'
 import { expect } from 'chai'
 import { stub } from 'sinon'

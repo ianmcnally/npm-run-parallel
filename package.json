@@ -19,7 +19,7 @@
   },
   "config": {
     "source_dir": "lib",
-    "tests": "lib/**/*_test.js",
+    "tests": "test/*.js",
     "test_helpers": "test-helpers/*.js",
     "output_dir": "dist"
   },
