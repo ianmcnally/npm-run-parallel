@@ -1,3 +1,2 @@
-require('babel-register')
-require('./cli')
+require('./dist/cli')
 

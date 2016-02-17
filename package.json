@@ -4,9 +4,16 @@
   "description": "Run npm tasks in parallel and exit when they are all done.",
   "main": "index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "start": "node $npm_package_main",
+    "build": "babel $npm_package_config_source_dir -d $npm_package_config_output_dir",
+    "watch": "npm run build -- --watch",
     "test:one": "node -e 'setTimeout(() => console.log(\"time1\"), 1000)'",
     "test:two": "node -e 'setTimeout(() => console.log(\"time2\"), 500)'"
+  },
+  "config": {
+    "source_dir": "lib",
+    "output_dir": "dist"
   },
   "author": "Ian McNally <ianmcnally@gmail.com>",
   "license": "ISC",
