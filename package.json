@@ -23,6 +23,17 @@
     "test_helpers": "test-helpers/*.js",
     "output_dir": "dist"
   },
+  "keywords": [
+    "npm",
+    "run",
+    "script",
+    "scripts",
+    "task",
+    "tasks",
+    "parallel",
+    "stream",
+    "concurrent"
+  ],
   "author": "Ian McNally <ianmcnally@gmail.com>",
   "license": "ISC",
   "dependencies": {
