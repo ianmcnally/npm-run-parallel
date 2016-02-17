@@ -37,7 +37,6 @@
   "author": "Ian McNally <ianmcnally@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "execa": "^0.2.2",
     "meow": "^3.7.0",
     "rx": "^4.0.8",
     "rx-node": "^1.0.1"
