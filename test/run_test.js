@@ -1,6 +1,5 @@
 import { runTasks } from '../lib/run'
-import * as execUtil from '../lib/exec'
-import Promise from 'bluebird'
+import execa from 'execa'
 import { expect } from 'chai'
 import { stub } from 'sinon'
 
@@ -13,18 +12,18 @@ describe('lib/run', () => {
     ]
 
     before(() => {
-      stub(execUtil, 'exec').returns(Promise.resolve())
+      stub(execa, 'shell').returns(Promise.resolve())
 
       return runTasks(tasks)
     })
 
     after(() => {
-      execUtil.exec.restore()
+      execa.shell.restore()
     })
 
     it('executes an `npm run` for each task', () => {
       tasks.forEach(task => {
-        expect(execUtil.exec).to.have.been.calledWith(`npm run ${task}`)
+        expect(execa.shell).to.have.been.calledWith(`npm run ${task}`)
       })
     })
 
