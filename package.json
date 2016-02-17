@@ -11,6 +11,7 @@
   "author": "Ian McNally <ianmcnally@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.3.1"
+    "bluebird": "^3.3.1",
+    "meow": "^3.7.0"
   }
 }

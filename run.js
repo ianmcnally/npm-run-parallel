@@ -8,12 +8,10 @@ const runTask = (task) => (
     .then(() => console.log('ran: ' + task))
 )
 
-const runTasks = (...tasks) => {
+export const runTasks = (...tasks) => {
   console.log('tasks: ', tasks)
   Promise.all(tasks.map(runTask))
     .then(() => console.log('done'))
     .catch(error => console.error('error: ', error))
 }
-
-runTasks('test:one', 'test:two')
 
