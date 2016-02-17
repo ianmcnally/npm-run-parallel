@@ -3,7 +3,7 @@ import execa from 'execa'
 import { expect } from 'chai'
 import { stub } from 'sinon'
 
-describe('lib/run', () => {
+xdescribe('lib/run', () => {
 
   describe('runTasks', () => {
     const tasks = [

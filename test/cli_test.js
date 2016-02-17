@@ -2,7 +2,7 @@ import { shell } from 'execa'
 import { expect } from 'chai'
 import pkg from '../package.json'
 
-describe('lib/cli', () => {
+xdescribe('lib/cli', () => {
   const taskThatIsLonger = '__test_fixture_longer__'
   const taskThatIsShorter = '__test_fixture_shorter__'
   let output
