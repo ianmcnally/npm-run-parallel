@@ -105,7 +105,9 @@
     "extends": "eslint:recommended",
     "ecmaFeatures": {
         "experimentalObjectRestSpread": true,
-        "modules": true,
         "blockBindings": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
     }
 }
