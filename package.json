@@ -12,10 +12,13 @@
     "prepublish": "npm run build",
     "start": "node $npm_package_main",
     "test": "mocha --compilers js:babel-register $npm_package_config_tests --require $npm_package_config_test_helpers",
+    "test:debug": "npm test -- --debug",
     "test:watch": "npm test -- --watch",
     "__test_fixture_longer__": "node -e 'setTimeout(() => console.log(\"time1\"), 10)'",
     "__test_fixture_shorter__": "node -e 'setTimeout(() => console.log(\"time1\"), 1)'",
-    "watch": "npm run build -- --watch"
+    "watch": "npm run build -- --watch",
+    "dummy:1": "node",
+    "dummy:2": "node"
   },
   "config": {
     "source_dir": "lib",
