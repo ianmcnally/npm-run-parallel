@@ -1,6 +1,6 @@
 Run npm tasks in parallel and exit when they are all done.
 
-[![Build Status](https://travis-ci.org/ianmcnally/npm-run-parallel.svg?branch=master)]
+![Build Status](https://travis-ci.org/ianmcnally/npm-run-parallel.svg?branch=master)
 
 ## Installation
 
