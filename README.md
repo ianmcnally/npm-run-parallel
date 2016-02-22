@@ -34,7 +34,11 @@ A common way to run any shell command (which an npm script is) is the `&` operat
 
 Some build tools, like gulp, accomplish parallel commands (a.k.a. tasks) with streaming libraries. The recent trend towards npm scripts from these walled-garden tools necessitated emulating that functionality. So `npm-run-parallel` all the tasks!
 
-## Local development
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/ianmcnally/npm-run-parallel/blob/master/CONTRIBUTING.md) for the code of conduct.
+
+### Local development
 
 - `npm run watch` - Compile source code, and watch for changes
 
@@ -42,7 +46,7 @@ Some build tools, like gulp, accomplish parallel commands (a.k.a. tasks) with st
 
 - `npm run test:watch` - Run tests and watch for file changes
 
-### Other commands
+#### Other commands
 
 - `npm run build` - Compiles source code (also used in `prepublish`)
 
