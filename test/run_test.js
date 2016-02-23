@@ -1,7 +1,9 @@
 import { runTasks } from '../lib/run'
 import childProcess from 'child_process'
 import { expect } from 'chai'
-import { spy } from 'sinon'
+import { stub } from 'sinon'
+
+const mockStream = { pause: stub(), addListener: stub(), resume: stub() }
 
 describe('lib/run', () => {
 
@@ -12,7 +14,11 @@ describe('lib/run', () => {
     ]
 
     before(() => {
-      spy(childProcess, 'exec')
+      stub(childProcess, 'exec').returns({
+        stdout: mockStream,
+        stderr: mockStream,
+        kill: stub()
+      })
 
       runTasks(tasks)
     })
@@ -30,3 +36,4 @@ describe('lib/run', () => {
   })
 
 })
+
