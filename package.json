@@ -47,6 +47,7 @@
     "babel-register": "^6.5.2",
     "chai": "^3.5.0",
     "eslint": "^2.2.0",
+    "execa": "^0.2.2",
     "mocha": "^2.4.5",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0"
