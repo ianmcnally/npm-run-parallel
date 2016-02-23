@@ -13,9 +13,9 @@
     "start": "node $npm_package_main",
     "test": "mocha --compilers js:babel-register $npm_package_config_tests --require $npm_package_config_test_helpers",
     "test:watch": "npm test -- --watch",
-    "__test_fixture_longer__": "node -e 'setTimeout(() => console.log(\"time1\"), 10)'",
-    "__test_fixture_shorter__": "node -e 'setTimeout(() => console.log(\"time1\"), 1)'",
-    "watch": "npm run build -- --watch"
+    "watch": "npm run build -- --watch",
+    "__test_fixture__": "echo",
+    "__test_fixture_2__": "echo"
   },
   "config": {
     "source_dir": "lib",
