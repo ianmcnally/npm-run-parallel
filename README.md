@@ -34,6 +34,10 @@ A common way to run any shell command (which an npm script is) is the `&` operat
 
 Some build tools, like gulp, accomplish parallel commands (a.k.a. tasks) with streaming libraries. The recent trend towards npm scripts from these walled-garden tools necessitated emulating that functionality. So `npm-run-parallel` all the tasks!
 
+#### Do I get colored terminal output from my tasks?
+
+Yes! It's awesome. I learned a lot about streams and stdout in the process of making this.
+
 ## Contributing
 
 See [CONTRIBUTING.md](https://github.com/ianmcnally/npm-run-parallel/blob/master/CONTRIBUTING.md) for the code of conduct.
