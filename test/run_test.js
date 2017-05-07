@@ -29,7 +29,7 @@ describe('lib/run', () => {
 
     it('executes an `npm run` for each task', () => {
       tasks.forEach(task => {
-        expect(childProcess.exec).to.have.been.calledWith(`npm run ${task} -- --color`)
+        expect(childProcess.exec).to.have.been.calledWith(`npm run ${task}`)
       })
     })
 
