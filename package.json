@@ -9,7 +9,7 @@
     "lint:fix": "npm run lint:eslint:fix",
     "lint:eslint": "eslint $npm_package_config_source_dir",
     "lint:eslint:fix": "npm run lint:eslint -- --fix",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "start": "node $npm_package_main",
     "test": "mocha --compilers js:babel-register $npm_package_config_tests --require $npm_package_config_test_helpers",
     "test:watch": "npm test -- --watch",
