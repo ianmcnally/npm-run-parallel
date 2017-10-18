@@ -4,6 +4,8 @@ Run npm tasks in parallel and exit when they are all done.
 
 ## Installation
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ianmcnally/npm-run-parallel.svg)](https://greenkeeper.io/)
+
 Locally (recommended, especially with npm scripts):
 
 `npm install npm-run-parallel`
